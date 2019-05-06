@@ -59,6 +59,24 @@ Item {
             cacheBuffer: 4000
         }
 
+        Image {
+            id: quitbutton
+            anchors.right: parent.right
+            anchors.leftMargin: 4
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 4
+
+            source: "images/quit.png"
+            opacity: 0.4
+            MouseArea {
+                anchors.fill: parent
+                anchors.margins: -20
+                onClicked: {
+                    Qt.quit()
+                }
+            }
+        }
+
         Text {
             id: headingText
             anchors.top: parent.top

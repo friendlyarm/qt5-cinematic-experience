@@ -9,3 +9,5 @@ packaging/*/*
 debian/*.log
 debian/*.substvars
 debian/files
+*.qmlc
+.qmake.stash
